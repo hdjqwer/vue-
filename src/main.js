@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import App from './component/App.vue';
-import routerConfig from './router/index.js';
+import routerConfig from './router/router.js';
 import axios from './js/api-config.js';
 Vue.prototype.$api = api;
 new Vue ({
