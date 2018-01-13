@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import App from './component/App.vue';
-import routerConfig from './router/router.js';
+import routerConfig from './router/index.js';
 import axios from 'axios';
 axios.defaults.baseURL = 'http://157.122.54.189:9095';
 Vue.prototype.$api = api;
