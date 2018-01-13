@@ -1,11 +1,15 @@
 import Vue from 'vue';
-import App from './component/App.vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import App from './component/App.vue';
 import routerConfig from './router/router.js';
-import axios from './js/api-config.js';
+import axios from 'axios';
+axios.defaults.baseURL = 'http://157.122.54.189:9095';
+Vue.prototype.$api = api;
+Vue.prototype.$http =axios;
+
+import api from './js/api-config';
 Vue.prototype.$api = api;
 new Vue ({
     el:'#app',

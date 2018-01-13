@@ -13,8 +13,10 @@
         },
         created () {
             this.$http.get(this.$api.isLogin).then(res =>{
+                console.log(res.data);
                 
             })
         }
     }
 </script>
+<script scoped></script>
