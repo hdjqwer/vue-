@@ -1,9 +1,9 @@
 
-import LoginComponent from '../component/login/Login.vue';
-import RegisterComponent from '../component/register.vue';
+import Login from '../component/login/Login.vue';
+import Register from '../component/register.vue';
 export default {
     router: [
-        {name:"1",path:"/login",component:LoginComponent},
-        {name:"r",path:"/register",component:RegisterComponent},
+        {name:"login",path:"/login",component:Login},
+        {name:"register",path:"/register",component:Register},
     ]
 }
